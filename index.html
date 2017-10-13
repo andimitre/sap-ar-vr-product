@@ -38,32 +38,71 @@ body,html{overflow-x:hidden}body{padding:60px 20px 0}footer{border-top:1px solid
     <ul class="nav nav-tabs nav-stacked">
       <li><a href="#" onclick="chapter1(this)">Chapter 1</a></li>
       <ul id="chap-1" class="nav nav-pills nav-stacked hide">
-        <li><a href="#">pg 15</a></li>
-        <li><a href="#">pg 16</a></li>
-        <li><a href="#">pg 17</a></li>
+        <li><a href="">pg 15</a></li>
+        <li><a href="">pg 16</a></li>
+        <li><a href="">pg 17</a></li>
       </ul>
       <li><a href="#" onclick="chapter2(this)">Chapter 2</a></li>
       <ul id="chap-2" class="nav nav-pills nav-stacked hide">
-        <li><a href="#">pg 25</a></li>
-        <li><a href="#">pg 26</a></li>
+        <li><a href="">pg 25</a></li>
+        <li><a href="">pg 26</a></li>
         <li onclick="showImg()"><a href="#">pg 27</a></li>
       </ul>
       <li><a href="#" onclick="chapter3(this)">Chapter 3</a></li>
       <ul id="chap-3" class="nav nav-pills nav-stacked hide">
-        <li><a href="#">pg 35</a></li>
-        <li><a href="#">pg 36</a></li>
-        <li><a href="#">pg 37</a></li>
+        <li><a href="">pg 35</a></li>
+        <li><a href="">pg 36</a></li>
+        <li><a href="">pg 37</a></li>
       </ul>
     </ul>
   </div>
+
   <div class="col-sm-6 col-lg-6">
     <img id="chap-2-img-1" src="assets/img/graph.png" class="img-fix hide">
     <img id="chap-2-img-2" src="assets/img/cover.png" class="img-fix ">
+    <img id="chap-2-img-icon" src="assets/img/page-27-icon.png" class="img-fix hide">
   </div>
 </div>
-<hr>
 <div class="row">
-  <p class="lead text-muted"></p>
+  <div class="col-sm-6 col-lg-6 hide" id="add-content">
+  <p class="lead text-muted">Add Content</p>
+  <div class="tabbable tabs-left">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab21" data-toggle="tab">Text</a></li>
+      <li><a href="#tab22" data-toggle="tab">Link</a></li>
+      <li><a href="#tab23" data-toggle="tab">Video</a></li>
+      <li><a href="#tab24" data-toggle="tab">AR</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab21">
+        <textarea class="form-control round"></textarea>
+        <span>
+          <p></p>
+          <input type="button" class="btn btn-primary btn add-text" value="Add Text"></input>
+        </span>
+      </div>
+      <div class="tab-pane" id="tab22">
+          <input type="text" class="form-control add-link">
+          <br>
+          <span>
+            <input type="button" class="btn btn-primary btn add-text" value="Add Link"></input>
+          </span>
+      </div>
+      <div class="tab-pane" id="tab23">
+        <div class="tab-pane active" id="tab21">
+          <input type="text" id="add-video" class="form-control add-video">
+          <span>
+            <br>
+            <input type="button" class="btn btn-primary btn add-text" value="Add Video" onclick="addVideo()"></input>
+          </span>
+        </div>
+      </div>
+      <div class="tab-pane" id="tab24">
+        <p>Coming soon</p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 <!-- <div class="row">
   <div class="col-sm-4 col-lg-4">
@@ -71,50 +110,7 @@ body,html{overflow-x:hidden}body{padding:60px 20px 0}footer{border-top:1px solid
   </div>
 </div> -->
     <!-- Navs -->
-    <div class="row hide" id="add-content">
-          <div class="col-sm-6 col-lg-6">
-            <p class="lead text-muted">Add Content</p>
-            <div class="tabbable tabs-left">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab21" data-toggle="tab">Text</a></li>
-                <li><a href="#tab22" data-toggle="tab">Link</a></li>
-                <li><a href="#tab23" data-toggle="tab">Video</a></li>
-                <li><a href="#tab24" data-toggle="tab">AR</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="tab21">
-                  <textarea class="form-control round"></textarea>
-                  <span>
-                    <p></p>
-                    <input type="button" class="btn btn-primary btn add-text" value="Add Text"></input>
-                  </span>
-                </div>
-                <div class="tab-pane" id="tab22">
-                    <input type="text" class="form-control add-link">
-                    <br>
-                    <span>
-                      <input type="button" class="btn btn-primary btn add-text" value="Add Link"></input>
-                    </span>
-                </div>
-                <div class="tab-pane" id="tab23">
-                  <div class="tab-pane active" id="tab21">
-                    <input type="text" id="add-video" class="form-control add-video">
-                    <span>
-                      <br>
-                      <input type="button" class="btn btn-primary btn add-text" value="Add Video" onclick="addVideo()"></input>
-                    </span>
-                  </div>
-                </div>
-                <div class="tab-pane" id="tab24">
-                  <p>Coming soon</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-
-
-  </div> <!-- /container -->
+  </div>
 
   <footer class="text-center">
     <p>&copy; ARducation</p>

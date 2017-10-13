@@ -27,10 +27,13 @@ function chapter3(element) {
 
 function showImg() {
   var elem = $("#chap-2-img-1");
+  var cover = $("#chap-2-img-2");
   if (elem.hasClass("hide")) {
     elem.removeClass("hide");
+    cover.addClass("hide");
   } else {
     elem.addClass("hide");
+    cover.removeClass("hide");
   }
   showContent();
 }
@@ -45,11 +48,14 @@ function showContent() {
 }
 
 function addVideo() {
-  var elem = $("#chap-2-img-2");
-  if (elem.hasClass("hide")) {
-    elem.removeClass("hide");
+  var icon = $("#chap-2-img-icon");
+  var original_img = $("#chap-2-img-1");
+  if (icon.hasClass("hide")) {
+    icon.removeClass("hide");
+    original_img.addClass("hide");
   } else {
-    elem.addClass("hide");
+    icon.addClass("hide");
+    original_img.removeClass("hide");
   }
   $("#add-video").val("");
 }
