@@ -3,8 +3,7 @@
 What to add to the book pages.
 
 For page 26:
-1. add teacher's notes {Read this chapter befor class on Monday} to the large "2" in the first line of this page.
-2. add a link to podcast {https://soundcloud.com/startalk} to "Neil Degrasse Tyson "the name of the author of the chapter.
+we do not need to add anything on page 26
 
 For page 27:
-We don't need to do that page. Just add one page to the preview view can do.
+1. add the video link {https://www.youtube.com/watch?v=WgHmqv_-UbQ} to the graph on page 27
