@@ -47,6 +47,10 @@ function showContent() {
   }
 }
 
+function hover(elem) {
+  $(elem).css('cursor', 'pointer');
+}
+
 function addVideo() {
   var icon = $("#chap-2-img-icon");
   var original_img = $("#chap-2-img-1");
