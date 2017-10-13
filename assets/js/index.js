@@ -9,10 +9,13 @@ function chapter1(element) {
 
 function chapter2(element) {
   var elem = $("#chap-2");
+  var img = $("#chap-2-img-2");
   if (elem.hasClass("hide")) {
     elem.removeClass("hide");
+    img.removeClass("hide");
   } else {
     elem.addClass("hide");
+    img.removeClass("hide");
   }
 }
 
