@@ -3,7 +3,12 @@ import requests
 
 century = input('Which century are you looking for works from: ')
 queryCentury = '&f.dating.period=' + century
-url = 'https://www.rijksmuseum.nl/api/en/collection?key=YOUR_API_KEY_HERE&format=json' + queryCentury
+typeOfWork = input('What types of artworks are you looking for:' )
+queryTypeOfWork = '&type=' + typeOfWork
+generalSearch = input('What are you looking for:' )
+queryGeneralSearch = '&q=' + generalSearch
+
+url = 'https://www.rijksmuseum.nl/api/en/collection?key=YOUR_API_KEY_HERE&format=json&imgonly=True' + queryCentury + queryTypeOfWork + queryGeneralSearch
 response = requests.get(url).json()
 #print(response)
 
