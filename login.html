@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>ARducation - AR Education Material</title>
+  <link rel="icon" type="png" href="assets/img/notebook.png">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Bootstrap 3 skin">
+  <meta name="keywords" content="bootstrap 3, skin, flat">
+  <meta name="author" content="bootstraptaste">
+
+  <!-- Bootstrap css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.custom.css" rel="stylesheet">
+
+  <!-- Docs Custom styles -->
+  <style>
+body,html{overflow-x:hidden}body{padding:60px 20px 0}footer{border-top:1px solid #ddd;padding:30px;margin-top:50px}.row>[class*=col-]{margin-bottom:40px}.navbar-container{position:relative;min-height:100px}.navbar.navbar-fixed-bottom,.navbar.navbar-fixed-top{position:absolute;top:50px;z-index:0}.navbar.navbar-fixed-bottom .container,.navbar.navbar-fixed-top .container{max-width:90%}.btn-group{margin-bottom:10px}.form-inline input[type=password],.form-inline input[type=text],.form-inline select{width:180px}.input-group{margin-bottom:10px}.pagination{margin-top:0}.navbar-inverse{margin:110px 0}
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+ <div class="jumbotron">
+  <h1>Login</h1>
+  <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+  <div class="row">
+    <div class="col-sm-12 col-lg-12">
+      <div class="row">
+        <div class="col-sm-6 col-lg-6" data-effect="slide-right">
+          <form id="login" class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+              <div class="col-lg-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <a href="">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <input type="submit" class="btn btn-info btn-lg" onclick="login()"></input>
+                <input type="button" class="btn btn-info btn-lg" value="Sign Up"></input>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ </div>
+ </div>
+
+  <footer class="text-center">
+    <p>&copy;  ARducation</p>
+  </footer>
+
+  <!-- Main Scripts-->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/login.js"></script>
+
+    <!-- Bootstrap 3 has typeahead optionally -->
+    <script src="assets/js/typeahead.min.js"></script>
+
+
+</body>
+</html>
